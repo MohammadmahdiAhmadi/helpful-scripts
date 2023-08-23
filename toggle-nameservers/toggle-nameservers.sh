@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RESOLV_FILE="/etc/resolv.conf"
-NEW_NAMESERVERS=("178.22.122.100" "185.51.200.2")  # Modify this array with your desired nameservers
+NEW_NAMESERVERS=("178.22.122.100" "185.51.200.2") # Modify this array with your desired nameservers
 
 # Function to comment out nameservers
 comment_nameservers() {
@@ -33,4 +33,3 @@ else
 fi
 
 echo "Nameservers have been toggled."
-

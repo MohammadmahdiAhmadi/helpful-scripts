@@ -1,11 +1,12 @@
 #!/bin/bash
 
 echo "Enter username:"
-read USERNAME
-echo "Enter password:"
-read -s PASSWORD
+read -r USERNAME
 
-### UNCOMMENT IF YOU WANT RUN ON STARTUP ###
+echo "Enter password:"
+read -rs PASSWORD
+
+### Uncomment if you want run on startup ###
 # USERNAME=9010000
 # PASSWORD=YOUR_PASSWORD
 
@@ -30,8 +31,8 @@ curl_output=$(curl -s 'https://internet.iut.ac.ir/login' \
   --compressed
 )
 
-if [ "$curl_output" != "" ]; then 
-	echo "Username or password is incorrect"
+if [ -n "$curl_output" ]; then 
+  echo "Username or password is incorrect"
 else
-	echo "You successfully connected to your iut internet account"
+  echo "You successfully connected to your IUT internet account"
 fi
