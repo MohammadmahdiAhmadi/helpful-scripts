@@ -19,6 +19,7 @@ Here's a list of the scripts available in this repository:
 3. [findLinks](findLinks): Extract and download specific file format links from web pages.
 4. [sort-by-size](sort-by-size): Sort files in a directory by size.
 5. [iut](iut): Login to the internet account of Isfahan University of Technology.
+6. [readme_generator_chatgpt](readme_generator_chatgpt): Generate a file for your project based on the content and structure of your files, then you can pass it to ChatGPT to write a README file for you project.
 
 ## Getting Started
 
